@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    /* 修改 */
+    min-width: 1184px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 72px;
+    width: 100%;
+    background-color: white;
+}
+
+.page-header .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 20px; */
+    /* line-height: 72px; */
+    width: 1184px;
+    background-color: white;
+}
+
+.page-header .header-logo img {
+    width: 259px;
+    height: 36px;
+}
+
+.page-header .header-section .header-btn {
+    display: flex;
+    align-items: center;
+}
+
+
+.page-header .header-section .header-btn .login-btn {
+    display: inline-block;
+    padding: 7px 15px;
+    width: 88px;
+    height: 32px;
+    color: rgb(23, 100, 232);
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid rgb(23, 100, 232);
+    border-radius: 2px;
+}
+
+
+.page-header .header-section .header-btn .login-btn:hover {
+    background-color: #dae4f598;
+}
+
+.page-header .header-section .header-btn .use-btn {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 7px 15px;
+    width: 88px;
+    height: 32px;
+    color: #fff;
+    background-color: #1764E8;
+    border: 1px solid #1764E8;
+    border-radius: 2px;
+}
+
+/* banner部分 */
+.page-body .banner-section {
+    width: 100%;
+    height: 490px;
+    background: url(images/banner.c10dc550.png) no-repeat center;
+    background-size: cover;
+}
+
+.page-body .banner-section {
+    text-align: center;
+}
+
+.page-body .banner-section .banner-title {
+    padding-top: 168px;
+    font-size: 32px;
+    font-family: AlibabaPuHuiTiM;
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+
+.page-body .banner-section .banner-info {
+    padding: 12px 0px 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* service部分 */
+.page-body .service-section {
+    margin: 0 auto;
+    height: 418px;
+    width: 100%;
+}
+
+.service-section .service-container {
+    display: flex;
+    justify-content: center;
+    padding: 64px 25px;
+    margin: 0 auto;
+    width: 1130px;
+}
+
+.service-container .service-container-left {
+    width: 404px;
+    height: 290px;
+}
+
+.service-container .service-container-left .service-title {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: AlibabaPuHuiTiB;
+}
+
+.service-container .service-container-left .service-content {
+    width: 404px;
+    /* height: 290px; */
+    padding: 0px 0 14px 20px;
+
+}
+
+.service-container .service-container-left .advantage-item {
+    margin-top: 16px;
+    line-height: 26px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .85);
+}
+
+.service-container-right {
+    margin-left: 80px;
+}
+
+.service-container-right img {
+    width: 656px;
+    height: 290px;
+}
+
+
+/* institution部分 */
+.page-body .institution-section {
+    margin: 0 auto;
+    height: 418px;
+    background: rgb(246, 249, 254) no-repeat center;
+}
+
+.page-body .institution-section .institution-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 64px 32px;
+    width: 1184px;
+}
+
+.institution-section .institution-container .institution-left {
+    margin-right: 88px;
+}
+
+.institution-section .institution-container .institution-left img {
+    width: 656px;
+    height: 290px;
+}
+
+.institution-container .institution-right {
+    width: 404px;
+    height: 290px;
+}
+
+.institution-container .institution-right .institution-title {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: AlibabaPuHuiTiB;
+}
+
+.institution-right .institution-content {
+    padding-left: 20px;
+}
+
+.institution-container .institution-right .pros-item {
+    margin-top: 16px;
+    line-height: 26px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .85);
+}
+
+/* product部分 */
+.product-section {
+    padding: 72px 0 79px;
+    text-align: center;
+    height: 418px;
+}
+
+.product-section .product-title {
+    padding-bottom: 72px;
+    font-family: AlibabaPuHuiTiB;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.product-section .product-content {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.product-section .product-content-item-sjh,
+.product-content-item-ksh,
+.product-content-item-bzh,
+.product-content-item-yzs,
+.product-content-item-czjd {
+    margin-right: 70px;
+}
+
+.product-content-item-sjh,
+.product-content-item-ksh,
+.product-content-item-bzh,
+.product-content-item-yzs,
+.product-content-item-czjd,
+.product-content-item-xlts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-content-item-sjh {
+    width: 144px;
+    height: 162px;
+}
+
+.product-content-item-ksh {
+    width: 128px;
+    height: 162px;
+}
+
+.product-content-item-bzh {
+    width: 160px;
+    height: 162px;
+}
+
+.product-content-item-yzs {
+    width: 112px;
+    height: 162px;
+}
+
+.product-content-item-czjd {
+    width: 160px;
+    height: 162px;
+}
+
+.product-content-item-xlts {
+    width: 128px;
+    height: 162px;
+}
+
+.product-section img {
+    width: 72px;
+    height: 72px;
+}
+
+.content-item-top {
+    padding: 24px 0 14px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.content-item-bottom {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+/* apply部分 */
+.apply-section {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    text-align: center;
+    width: 100%;
+    height: 348px;
+    background: url(images/apply-bg.2c330740.png) no-repeat center;
+    background-size: cover;
+}
+
+.apply-section .apply-title {
+    padding-top: 72px;
+    font-size: 32px;
+    font-family: AlibabaPuHuiTiB;
+    font-weight: 500;
+    color: white;
+}
+
+.apply-section .apply-content {
+    padding: 16px 0 32px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.apply-section .apply-btn {
+    margin: 0 auto;
+    width: 160px;
+    height: 52px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1764e8;
+    background-color: white;
+    border: 0;
+    border-radius: 2px;
+}
+
+/* leg部分 */
+.leg-section {
+    margin: 0 auto;
+    height: 85px;
+    border-top: 1px solid #ebebeb;
+}
+
+.leg-section .leg-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 32px;
+    width: 1184px;
+    height: 85px;
+    line-height: 84px;
+}
+
+.leg-section .leg-container .leg-container-pic {
+    padding-top: 30px;
+}
+
+.leg-container-pic img {
+    margin: auto 0;
+    width: 116px;
+    height: 36px;
+}
+
+.leg-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+.leg-container span {
+    padding-right: 32px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+}
+
+/* footer部分 */
+.page-footer {
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    background: rgb(246, 249, 254) no-repeat center;
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 12px;
+}
