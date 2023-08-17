@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.page-container {
+    height: 100%;
+    min-width: 968px;
+}
+
+.page-container {
+    display: flex;
+    background: #f0f2f5;
+}
+
+/* 左半部分 */
+.login-bg {
+    padding: 172px 58px 0 72px;
+    width: 528px;
+    height: 100%;
+    background: url(images/login_bg.af200af8.png) #1764e8 no-repeat left 100%/contain;
+}
+
+.login-bg .welcome-title {
+    z-index: 999;
+    width: 221px;
+    height: 36px;
+    text-wrap: nowrap;
+    font-weight: 900;
+    font-size: 28px;
+    font-family: AlibabaPuHuiTiH;
+    color: #fff;
+    line-height: 36px;
+}
+
+.login-bg .line-icon {
+    display: inline-block;
+    width: 32px;
+    height: 4px;
+    margin: 16px 0;
+    background: hsla(0, 0%, 100%, .25);
+}
+
+.login-bg .welcome-intro {
+    margin-top: -4px;
+    width: 398px;
+    height: 111px;
+    font-size: 22px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #fff;
+    line-height: 37px;
+}
+
+/* 右半部分 */
+.login-form {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 40px 24px 40px;
+}
+
+/* logo部分 */
+.login-form .logo-container {
+    position: absolute;
+    top: 18px;
+    left: 40px;
+    width: 116px;
+    height: 36px;
+}
+
+.login-form .logo-container img {
+    width: 116px;
+    height: 36px;
+}
+
+/* change部分 */
+.change-container {
+    position: absolute;
+    top: 18px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 138px;
+    /* line-height: 40px; */
+    height: 40px;
+    /* text-align: center; */
+    /* cursor: 网页浏览时用户鼠标指针的样式或图形形状。 
+    cursor:pointer：光标为一只手*/
+    cursor: pointer;
+}
+
+
+.change-container .change-icon {
+    margin-right: 6px;
+    padding-top: 2px;
+}
+
+.change-container .change-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+.change-container .change-content {
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .45);
+}
+
+.change-container:hover {
+    background-color: #e5e7e9;
+}
+
+/* ant-card部分 */
+.ant-card {
+    padding: 32px;
+    width: 358px;
+    height: 356px;
+    box-shadow: 0 7px 24px -2px rgba(0, 0, 0, .1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+
+.ant-card .ant-card-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    width: 294px;
+    height: 30px;
+}
+
+.ant-card .ant-card-top .top-title {
+    display: inline-block;
+    height: 30px;
+    font-size: 22px;
+    font-family: AlibabaPuHuiTiB;
+    color: rgba(0, 0, 0, .85);
+    line-height: 30px;
+}
+
+.ant-card .ant-card-top .top-type {
+    display: inline-block;
+    margin-left: 6px;
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background: rgba(0, 0, 0, .04);
+    border-radius: 2px 2px 2px 0;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .45);
+}
+
+
+.ant-card .ant-card-form {
+    width: 294px;
+    height: 168px;
+}
+
+
+.ant-card-form .ant-phone-container {
+    margin-bottom: 32px;
+
+}
+
+.ant-card-form .phone-btn {
+    padding: 4px 30px;
+    width: 294px;
+    height: 32px;
+    color: rgb(217, 217, 217);
+    border: 1px solid rgb(217, 217, 217);
+}
+
+.ant-card-form .phone-btn:hover {
+    border: 1px solid #1764e8;
+}
+
+.ant-card-form .phone-btn:focus {
+    border-color: #1764e8;
+    outline: none;
+}
+
+.ant-card-form .ant-code:hover {
+    border: 1px solid #1764e8;
+}
+
+.ant-card-form .ant-code:focus {
+    border-color: #1764e8;
+    outline: none;
+}
+
+.ant-card-form .code-btn:hover {
+    border: 1px solid #1764e8;
+}
+
+.ant-card-form .code-btn:focus {
+    border-color: #1764e8;
+    outline: none;
+}
+
+
+.ant-card-form .ant-code-container {
+    display: flex;
+    align-items: start;
+}
+
+.ant-card-form .ant-code {
+    padding: 4px 11px 4px 30px;
+    margin: 0 8px 24px 0;
+    width: 184px;
+    height: 32px;
+    border: 1px solid rgb(217, 217, 217);
+}
+
+.ant-card-form .code-btn {
+    width: 102px;
+    height: 32px;
+    font-size: 14px;
+    border: 1px solid rgb(217, 217, 217);
+    background-color: #fff;
+}
+
+.ant-card-form .auto-check {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.ant-card-form .auto-check .check-btn {
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(217, 217, 217);
+}
+
+.ant-card-form .auto-check span {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.ant-card .ant-card-btn {
+    padding: 0 15px;
+    margin-top: 20px;
+    width: 294px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #1764e8;
+    border: 1px solid rgb(23, 100, 232);
+    border-radius: 2px;
+}
+
+.ant-card .ant-card-btn:hover {
+    background-color: rgb(64, 136, 245);
+}
+
+/* 底部 */
+.login-form .login-footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    /* width: 254.328px; */
+    height: 64px;
+    white-space: nowrap;
+}
+
+.login-form .login-footer span {
+    display: inline-block;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.login-form .login-footer .footer-info {
+    width: 120.08px;
+    font-size: 10px;
+    font-family: Helvetica Neue, Helvetica,
+        PingFang SC, Hiragino Sans GB, Microsoft YaHei,
+        微软雅黑, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+}
