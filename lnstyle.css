@@ -171,9 +171,22 @@ body,
 
 
 .ant-card-form .ant-phone-container {
+    position: relative;
     margin-bottom: 32px;
 
 }
+
+.ant-card-form .ant-phone-container .phone-icon {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(images/phone-icon.png) no-repeat center;
+    background-size: 100% auto;
+}
+
 
 .ant-card-form .phone-btn {
     padding: 4px 30px;
@@ -214,6 +227,21 @@ body,
 .ant-card-form .ant-code-container {
     display: flex;
     align-items: start;
+}
+
+.ant-code-container .code-combine {
+    position: relative;
+}
+
+.ant-code-container .code-combine .code-icon {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(images/code-icon.png) no-repeat center;
+    background-size: 100% auto;
 }
 
 .ant-card-form .ant-code {
